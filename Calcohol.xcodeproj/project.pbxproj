@@ -14,6 +14,7 @@
 		E42451491ADC9539008C0821 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E42451471ADC9539008C0821 /* LaunchScreen.xib */; };
 		E42451551ADC9539008C0821 /* CalcoholTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E42451541ADC9539008C0821 /* CalcoholTests.m */; };
 		E42451601ADDC7C0008C0821 /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E424515F1ADDC7C0008C0821 /* WhiskeyViewController.m */; };
+		E42451631ADE92A3008C0821 /* MainBLCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42451621ADE92A3008C0821 /* MainBLCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		E42451541ADC9539008C0821 /* CalcoholTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcoholTests.m; sourceTree = "<group>"; };
 		E424515E1ADDC7C0008C0821 /* WhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WhiskeyViewController.h; path = ../WhiskeyViewController.h; sourceTree = "<group>"; };
 		E424515F1ADDC7C0008C0821 /* WhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WhiskeyViewController.m; path = ../WhiskeyViewController.m; sourceTree = "<group>"; };
+		E42451611ADE92A3008C0821 /* MainBLCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBLCViewController.h; sourceTree = "<group>"; };
+		E42451621ADE92A3008C0821 /* MainBLCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBLCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 		E42451371ADC9539008C0821 /* Calcohol */ = {
 			isa = PBXGroup;
 			children = (
+				E42451611ADE92A3008C0821 /* MainBLCViewController.h */,
+				E42451621ADE92A3008C0821 /* MainBLCViewController.m */,
 				E424513C1ADC9539008C0821 /* AppDelegate.h */,
 				E424513D1ADC9539008C0821 /* AppDelegate.m */,
 				E424513F1ADC9539008C0821 /* ViewController.h */,
@@ -223,6 +228,7 @@
 			files = (
 				E42451411ADC9539008C0821 /* ViewController.m in Sources */,
 				E42451601ADDC7C0008C0821 /* WhiskeyViewController.m in Sources */,
+				E42451631ADE92A3008C0821 /* MainBLCViewController.m in Sources */,
 				E424513E1ADC9539008C0821 /* AppDelegate.m in Sources */,
 				E424513B1ADC9539008C0821 /* main.m in Sources */,
 			);
@@ -411,6 +417,7 @@
 				E424515A1ADC9539008C0821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E424515B1ADC9539008C0821 /* Build configuration list for PBXNativeTarget "CalcoholTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +426,7 @@
 				E424515D1ADC9539008C0821 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

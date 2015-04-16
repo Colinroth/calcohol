@@ -59,6 +59,20 @@
     
     self.resultLabel.numberOfLines = 0;
     
+    self.view.backgroundColor = [UIColor colorWithRed:0.741 green:0.925 blue:0.714 alpha:1];
+    
+}
+
+-(instancetype) init {
+    self = [super init];
+    
+    if (self) {
+        self.title = NSLocalizedString(@"Wine", @"wine");
+        
+        [self.tabBarItem setTitlePositionAdjustment:UIOffsetMake(0, -18)];
+    }
+    
+    return self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -75,11 +89,15 @@
 
 
 -(void) viewWillLayoutSubviews {
+    
     [super viewWillLayoutSubviews];
+    
     CGFloat viewWidth = 320;
     CGFloat padding = 20;
     CGFloat itemwidth = viewWidth - padding - padding;
     CGFloat itemHeight = 44;
+    
+   
     
     self.beerPercentTextField.frame = CGRectMake(padding, padding, itemwidth, itemHeight);
     
@@ -93,10 +111,10 @@
     self.calculateButton.frame = CGRectMake(padding, bottomOfLabel + padding, itemwidth, itemHeight);
 }
 
-- (void)sliderDidChange:(UISlider *)sender {
+- (void)sliderValueDidChange:(UISlider *)sender {
     NSLog(@"Slider value changed to %f.", sender.value);
     [self.beerPercentTextField resignFirstResponder];
-    self.numberOfBeersSlider.text = [NSString stringWithFormat:@"%f", sender.value];
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
 }
 - (void)buttonPressed:(UIButton *)sender {
     [self.beerPercentTextField resignFirstResponder];
